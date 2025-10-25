@@ -118,3 +118,20 @@
 .btn-primary:hover {
   background-color: #27ae60;
 }
+
+@media (max-width: 904px) {
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: none;
+  }
+}

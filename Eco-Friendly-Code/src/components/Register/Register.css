@@ -1,0 +1,151 @@
+/* Contenedor general */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Tarjeta principal */
+.register-card {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+}
+
+/* Título y subtítulo */
+.register-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.register-subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+/* Campos del formulario */
+.register-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid #d5e8d4;
+  border-radius: 999px;
+  outline: none;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  background: #fff;
+}
+
+.register-form input::placeholder {
+  color: #b7b7b7;
+}
+
+
+
+/* Campo de contraseña con icono */
+.password-field {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 0.1rem;
+  top: 50%;
+  transform: translateY(-65%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Checkbox de términos */
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.terms input {
+  margin-right: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.terms-link {
+  color: #2e8b57;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Botón principal */
+.register-button {
+  width: 100%;
+  background-color: #2e8b57;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #27914a;
+}
+
+/* Texto inferior */
+.login-text {
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  color: #2e8b57;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .register-title {
+    font-size: 1.6rem;
+  }
+
+  .register-form input {
+    font-size: 0.9rem;
+  }
+}

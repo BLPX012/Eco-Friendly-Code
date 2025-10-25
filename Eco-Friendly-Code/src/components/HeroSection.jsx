@@ -1,4 +1,4 @@
-import './HeroSection.css';
+import './Styles/HeroSection.css';
 
 function HeroSection(){
     return(
@@ -16,7 +16,7 @@ function HeroSection(){
           <li><a href="#">Recompensas</a></li>
           <li><a href="#">Iniciar Sesión</a></li>
           <li>
-            <a href="#" className="btn-register">Regístrate Gratis</a>
+            <a href="/register" className="btn-register">Regístrate Gratis</a>
           </li>
         </ul>
       </nav>

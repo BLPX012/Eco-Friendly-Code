@@ -1,0 +1,80 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.Card {
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1 1 320px; /* base flexible */
+  max-width: 500px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* mantiene proporción de imagen */
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.Card h3 {
+  margin-top: 1.2rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem); /* Escala con el ancho de pantalla */
+  color: #1d3557;
+}
+
+.Card p {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  color: #555;
+  margin-top: 0.8rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* 📱 Responsive: una sola columna en pantallas pequeñas */
+@media (max-width: 700px) {
+  .Container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Card {
+    max-width: 90%;
+  }
+}
+
+/* 💻 En pantallas medianas, tarjetas crecen un poco */
+@media (min-width: 900px) {
+  .Card {
+    max-width: 520px;
+    padding: 1.5rem;
+  }
+
+  .Card img {
+    aspect-ratio: 16 / 8;
+  }
+}
+
+/* 🖥️ En pantallas grandes, crecen más en ancho y altura */
+@media (min-width: 1300px) {
+  .Card {
+    max-width: 580px;
+    padding: 2rem;
+  }
+
+  .Card img {
+    aspect-ratio: 16 / 7;
+  }
+}
