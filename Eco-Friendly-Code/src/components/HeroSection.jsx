@@ -1,8 +1,9 @@
-import './HeroSection.css';
+import { Link } from 'react-router-dom'
+import './HeroSection.css'
 
-function HeroSection(){
-    return(
-        <section>
+function HeroSection() {
+  return (
+    <section>
       <nav className="navbar">
         <div className="navbar-logo">
           <span className="logo-text">
@@ -14,9 +15,10 @@ function HeroSection(){
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Cómo funciona</a></li>
           <li><a href="#">Recompensas</a></li>
-          <li><a href="#">Iniciar Sesión</a></li>
+          <li><Link to="/login">Iniciar Sesión</Link></li>
           <li>
-            <a href="#" className="btn-register">Regístrate Gratis</a>
+           <Link to="/register" className="btn-register">Regístrate</Link>
+
           </li>
         </ul>
       </nav>
@@ -31,9 +33,8 @@ function HeroSection(){
           <button className="btn-primary">Comienza a Reciclar Ahora</button>
         </div>
       </div>
-
     </section>
-    )
+  )
 }
 
-export default HeroSection;
+export default HeroSection

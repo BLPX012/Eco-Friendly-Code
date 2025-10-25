@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  color: #00b050;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.logo span {
+  color: #333;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: #00b050;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* Caja del login */
+.login-box {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-box h2 {
+  color: #00b050;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #00b050;
+}
+
+/* Botones */
+.btn {
+  width: 100%;
+  background-color: #00b050;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background-color: #00913d;
+}
+
+/* Texto pequeño */
+.text-small {
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+
+.text-small a {
+  color: #00b050;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-small a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 25px;
+  }
+  .login-box h2 {
+    font-size: 22px;
+  }
+}
