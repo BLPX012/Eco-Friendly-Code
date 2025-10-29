@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 // Componentes
+import Terminos from './components/TerminosCondiciones/TerminosCondiciones.jsx'
 import NavBar from './components/NavBar.jsx'
 import HeroSection from './components/HeroSection.jsx'
 import Cards from './components/Cards.jsx'
@@ -11,6 +12,16 @@ import Footer from './components/Footer.jsx'
 import LogIn from './components/LogIn/LogIn.jsx'
 import RewardsPage from './components/RewardsPage/RewardsPage.jsx'
  
+function TerminosPage(){
+  return(
+    <>
+    <NavBar />
+    <Terminos />
+    <Footer />
+    </>
+
+  )
+}
 
 function RewardsPageNoSesion(){
   return(
@@ -76,6 +87,9 @@ function App() {
       {isHomePage === '/log-in' && <LogInPage />}
 
       {isHomePage === '/rewards' && <RewardsPageNoSesion />}
+
+      {isHomePage === '/terminos' && <TerminosPage />}
+
     </>
   )
 }
