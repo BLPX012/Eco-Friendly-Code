@@ -42,3 +42,9 @@
   font-weight: 700;
   font-size: 0.95rem;
 }
+
+
+.RewardsCards:hover {
+    transform: translateY(-10px);
+    box-shadow: 1 8px 20px rgba(0, 0, 0, 0.15);
+}

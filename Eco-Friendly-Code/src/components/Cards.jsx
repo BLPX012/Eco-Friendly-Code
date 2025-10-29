@@ -1,5 +1,4 @@
-import './Styles/Cards.css'
-import { FaPen, FaStar, FaGift } from "react-icons/fa";
+import './Styles/Cards.css';
 import star from '../assets/star.svg';
 import register from '../assets/register.svg';
 import redeem from '../assets/redeem.svg';

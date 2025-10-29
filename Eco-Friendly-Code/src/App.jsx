@@ -1,17 +1,43 @@
 import './App.css'
 import { useState } from 'react'
 // Componentes
+import NavBar from './components/NavBar.jsx'
 import HeroSection from './components/HeroSection.jsx'
 import Cards from './components/Cards.jsx'
 import Oni_Chan from './components/Tuki.jsx'
 import Rewards from './components/Rewards.jsx'
 import Register from './components/Register/Register.jsx'
+import Footer from './components/Footer.jsx'
+import LogIn from './components/LogIn/LogIn.jsx'
+import RewardsPage from './components/RewardsPage/RewardsPage.jsx'
  
+
+function RewardsPageNoSesion(){
+  return(
+    <>
+    <NavBar />
+    <RewardsPage />
+    <Footer />
+    </>
+  )
+}
+
+function LogInPage(){
+  return (
+    <>
+      <NavBar />
+      <LogIn />
+      <Footer />
+    </>
+  )
+}
 
 function RegisterPage(){
   return (
     <>
+      <NavBar />
       <Register />
+      <Footer />
     </>
   )
 }
@@ -19,6 +45,7 @@ function RegisterPage(){
 function HomePage(){
   return (
     <>
+      <NavBar />
       <HeroSection />
 
       <h2>Cómo Funciona</h2>
@@ -30,18 +57,25 @@ function HomePage(){
 
       <h2>Recompensas Destacadas</h2>
       <Rewards />
+
+      <Footer />
     </>
   )
 }
 
 function App() {
 
-  const [isRegisterPage] = useState(window.location.pathname);
+  const [isHomePage] = useState(window.location.pathname);
 
   return (
     <>
-      {isRegisterPage === '/' && <HomePage />}
-      {isRegisterPage === '/register' && <RegisterPage />}
+      {isHomePage === '/' && <HomePage /> 
+      }
+      {isHomePage === '/register' && <RegisterPage />}
+
+      {isHomePage === '/log-in' && <LogInPage />}
+
+      {isHomePage === '/rewards' && <RewardsPageNoSesion />}
     </>
   )
 }

@@ -55,7 +55,7 @@ function Register(){
 
         <p className="login-text">
           ¿Ya tienes una cuenta?{" "}
-          <a href="#" className="login-link">
+          <a href="/log-in" className="login-link">
             Inicia sesión.
           </a>
         </p>

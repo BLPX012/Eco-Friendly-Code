@@ -3,6 +3,7 @@
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -11,7 +12,8 @@
     border: 1px solid #ddd;
     border-radius: 25px;
     padding: 15px;
+    max-width: 20rem;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
-    margin: 10px;
+    margin: 2.7rem;
     flex: 1;
 }

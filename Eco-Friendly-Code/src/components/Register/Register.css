@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 79vh;
   background: #fff;
   box-sizing: border-box;
 }
@@ -48,7 +48,7 @@
   width: 100%;
   padding: 0.8rem 1rem;
   border: 1.5px solid #d5e8d4;
-  border-radius: 999px;
+  border-radius: 14px;
   outline: none;
   font-size: 0.95rem;
   color: #333;
