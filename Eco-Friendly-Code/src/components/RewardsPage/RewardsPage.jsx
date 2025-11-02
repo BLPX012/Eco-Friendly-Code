@@ -27,7 +27,9 @@ function RewardsPage() {
           <p>
             Únete a nuestra comunidad y sé recompensado por cada residuo que reciclas.
           </p>
+          <a href="/register">
           <button className="btn-primary">Comienza a Reciclar Ahora</button>
+          </a>
         </div>
       </div>
 
@@ -58,7 +60,9 @@ function RewardsPage() {
           <h3>¿Estas Listo para Empezar a Reciclar y Ganar?</h3>
           <p>Es gratis, fácil y bueno para el planeta. ¡Únete al movimiento hoy!</p>
         </div>
+        <a href="/register">
         <button className="cta-button">Crea tu Cuenta Gratuita</button>
+        </a>
       </div>
     </div>
     </>

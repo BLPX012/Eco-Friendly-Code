@@ -1,0 +1,81 @@
+.AsideContainers{
+    width: 230px;
+    min-height: 100vh;
+    background: #fff;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.perfil-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-info h4 {
+    margin: 0;
+    font-size: 15px;
+    color: #111;
+}
+
+.perfil-info p {
+    margin: 0;
+    font-size: 13px;
+    color: #45a14e;
+}
+
+/* Navegación de usuario */
+
+.navegacion-usuario ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navegacion-usuario li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #222;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-usuario li svg {
+  font-size: 18px;
+}
+
+.navegacion-usuario li svg {
+  font-size: 18px;
+}
+
+.navegacion-usuario li:hover {
+  background: #f4fef4;
+  color: #34b445;
+}
+
+.navegacion-usuario li.activo {
+  background: #d8fbd8;
+  color: #1e9e3b;
+  font-weight: 600;
+}

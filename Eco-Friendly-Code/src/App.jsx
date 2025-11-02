@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 // Componentes
+import DashboardUsers from './components/UserPage/ComponentesUsurios/Dashboard.jsx'
 import Terminos from './components/TerminosCondiciones/TerminosCondiciones.jsx'
 import NavBar from './components/NavBar.jsx'
 import HeroSection from './components/HeroSection.jsx'
@@ -11,7 +12,8 @@ import Register from './components/Register/Register.jsx'
 import Footer from './components/Footer.jsx'
 import LogIn from './components/LogIn/LogIn.jsx'
 import RewardsPage from './components/RewardsPage/RewardsPage.jsx'
- 
+import PanelUsuario from './components/UserPage/ComponentesUsurios/AsideUsers.jsx' 
+
 function TerminosPage(){
   return(
     <>
@@ -20,6 +22,17 @@ function TerminosPage(){
     <Footer />
     </>
 
+  )
+}
+
+function UsersPage(){
+  return(
+    <>
+    <div style={{display: 'flex'}}>
+    <PanelUsuario />
+    <DashboardUsers />
+    </div>
+    </>
   )
 }
 
@@ -90,6 +103,7 @@ function App() {
 
       {isHomePage === '/terminos' && <TerminosPage />}
 
+      {isHomePage === '/pra' && <UsersPage />}
     </>
   )
 }

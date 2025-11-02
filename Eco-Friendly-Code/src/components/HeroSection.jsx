@@ -10,7 +10,9 @@ function HeroSection(){
           <p>
             Únete a nuestra comunidad y sé recompensado por cada residuo que reciclas.
           </p>
+          <a href="/register">
           <button className="btn-primary">Comienza a Reciclar Ahora</button>
+          </a>
         </div>
       </div>
 
