@@ -6,10 +6,36 @@ import eyeClosed from '../../assets/noShowPassword.svg'
 
 function LogIn() {
   const [showPassword, setShowPassword] = useState(false);
+  const [usuario, setUsuario] = useState("");
+  const [password, setPassword] = useState("");
+  const [mensaje, setMensaje] = useState("");
 
   const togglePassword = () => {
     setShowPassword(prev => !prev);
   };
+
+
+  const handleLogIn = async (e) =>{
+    e.preventDefault();
+
+    const res = await fetch('http://localhost/Eco-Friendly-Code/Backend/Api/login.php',{
+      method: 'POST',
+      headers:{
+        'Content-Type':'application/json'},
+        body: JSON.stringify({
+          usuario: usuario,
+          password: password
+        })
+    });
+
+    const data = await res.json();
+    setMensaje(data.mensaje);
+    console.log(data)
+    if(data.exito){
+      localStorage.setItem('usuario', usuario);
+      window.location = '/pra';
+    }
+  }
 
   return (
     <div className="login-container">
@@ -19,7 +45,7 @@ function LogIn() {
           Inicia sesión para continuar reciclando.
         </p>
 
-        <form className="login-form">
+        <form onSubmit={handleLogIn} className="login-form">
           <label className="login-label">Correo electrónico</label>
           <input
             type="email"
